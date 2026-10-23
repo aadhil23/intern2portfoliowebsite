@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta name="description" content="John Doe is a creative developer building beautiful, functional, user-centered digital experiences." />
+    <title>StyleSphere - Creative Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script>
+        tailwind = {
+            config: {
+                corePlugins: {
+                    preflight: false
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container-fluid site-nav px-4 px-xl-4">
+                <a class="navbar-brand brand flex items-center gap-2" href="#home"><span class="brand-dot"></span><span>Portfolio</span></a>
+                <button class="menu-toggle d-lg-none" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span></button>
+                <div class="navbar-collapse collapse" id="site-navigation">
+                    <ul class="navbar-nav nav-center flex items-center gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a class="nav-cta" href="#contact">Let's Talk</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container-fluid page-gutter hero-inner">
+                <div class="row align-items-center hero-row">
+                    <div class="col-lg-6 hero-copy">
+                        <div class="hero-kicker"><span class="green-dot"></span> Creative Developer</div>
+                        <h1 id="hero-title">Crafting Digital<br /> <span class="underlined-word">Experiences</span></h1>
+                        <p>I design and build beautiful websites and applications that help businesses grow and connect with their audience. Let's create something amazing together.</p>
+                        <div class="hero-actions flex items-center gap-3">
+                            <a class="button button-gradient" href="#work">View Projects <span aria-hidden="true">→</span></a>
+                            <a class="button button-outline" href="#about">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-art-column">
+                        <div class="available-pill"><span class="green-dot"></span> Available for work</div>
+                        <div class="hero-portrait"><span>JD</span></div>
+                        <div class="hero-stats flex items-center">
+                            <div><strong>5+</strong><span>YEARS EXP.</span></div>
+                            <div><strong>50+</strong><span>PROJECTS</span></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="scroll-hint" href="#about"><span>SCROLL</span><i></i></a>
+            </div>
+        </section>
+
+        <section class="about-section page-gutter" id="about" aria-labelledby="about-title">
+            <div class="section-label"><span></span> ABOUT ME</div>
+            <h2 id="about-title">Passionate about creating <em>meaningful</em> experiences</h2>
+            <div class="row about-row g-5">
+                <div class="col-lg-6 about-copy">
+                    <p>Hello! I'm <strong>John Doe</strong>, a creative developer with over 5 years of experience in building digital products that make a difference. I specialize in creating beautiful, functional, and user-centered experiences.</p>
+                    <p>My approach combines <strong>technical expertise</strong> with <strong>design sensibility</strong>, ensuring that every project I work on not only looks great but also performs exceptionally.</p>
+                    <p>When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or enjoying a good cup of coffee while sketching new ideas.</p>
+                </div>
+                <div class="col-lg-6 values-list">
+                    <article class="value-card"><span class="value-number">01</span>
+                        <div>
+                            <h3>Clean Code</h3>
+                            <p>Writing maintainable, scalable, and well-documented code that stands the test of time.</p>
+                        </div>
+                    </article>
+                    <article class="value-card"><span class="value-number">02</span>
+                        <div>
+                            <h3>User-Centric</h3>
+                            <p>Putting users first in every decision, creating intuitive and accessible experiences.</p>
+                        </div>
+                    </article>
+                    <article class="value-card"><span class="value-number">03</span>
+                        <div>
+                            <h3>Attention to Detail</h3>
+                            <p>Obsessing over the little things that make a big difference in the final product.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row about-stats g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="about-stat"><strong>5+</strong><span>Years Experience</span></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="about-stat"><strong>50+</strong><span>Projects Completed</span></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="about-stat"><strong>30+</strong><span>Happy Clients</span></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="about-stat"><strong>15+</strong><span>Awards Won</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section page-gutter" id="skills" aria-labelledby="skills-title">
+            <div class="section-label"><span></span> SKILLS &amp; SERVICES</div>
+            <h2 id="skills-title">What I <em>bring</em> to the table</h2>
+            <div class="row skills-content g-5">
+                <div class="col-lg-6">
+                    <h3 class="skills-subtitle">Technical Proficiency</h3>
+                    <div class="skill">
+                        <div class="skill-heading flex items-center justify-between"><span>React / Next.js</span><span>95%</span></div>
+                        <div class="skill-track"><span style="--level:95%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-heading flex items-center justify-between"><span>TypeScript</span><span>90%</span></div>
+                        <div class="skill-track"><span style="--level:90%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-heading flex items-center justify-between"><span>Node.js / Express</span><span>85%</span></div>
+                        <div class="skill-track"><span style="--level:85%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-heading flex items-center justify-between"><span>UI/UX Design</span><span>88%</span></div>
+                        <div class="skill-track"><span style="--level:88%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-heading flex items-center justify-between"><span>Database Design</span><span>82%</span></div>
+                        <div class="skill-track"><span style="--level:82%"></span></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 services-list">
+                    <article class="service-card"><span class="service-icon" aria-hidden="true">◉</span>
+                        <div>
+                            <h3>Web Design</h3>
+                            <p>Creating beautiful, intuitive interfaces that engage users and drive conversions.</p>
+                        </div>
+                    </article>
+                    <article class="service-card"><span class="service-icon code-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <div>
+                            <h3>Development</h3>
+                            <p>Building robust, scalable applications with modern technologies and best practices.</p>
+                        </div>
+                    </article>
+                    <article class="service-card"><span class="service-icon phone-icon" aria-hidden="true">▯</span>
+                        <div>
+                            <h3>Responsive Design</h3>
+                            <p>Ensuring seamless experiences across all devices and screen sizes.</p>
+                        </div>
+                    </article>
+                    <article class="service-card"><span class="service-icon" aria-hidden="true">ϟ</span>
+                        <div>
+                            <h3>Performance</h3>
+                            <p>Optimizing speed and efficiency for the best possible user experience.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tool-marquee">
+                <div class="marquee-title">TOOLS &amp; TECHNOLOGIES I USE</div>
+                <div class="marquee-track"><span>React</span><i>•</i><span>Next.js</span><i>•</i><span>TypeScript</span><i>•</i><span>Tailwind CSS</span><i>•</i><span>Node.js</span><i>•</i><span>PostgreSQL</span><i>•</i><span>Figma</span><i>•</i><span>Git</span><i>•</i><span>AWS</span><i>•</i><span>Docker</span><i>•</i><span>React</span><i>•</i><span>Next.js</span><i>•</i><span>TypeScript</span><i>•</i><span>Tailwind CSS</span><i>•</i><span>Node.js</span><i>•</i><span>PostgreSQL</span><i>•</i><span>Figma</span><i>•</i><span>Git</span><i>•</i><span>AWS</span><i>•</i><span>Docker</span><i>•</i></div>
+            </div>
+        </section>
+
+        <section class="work-section page-gutter" id="work" aria-labelledby="work-title">
+            <div class="section-label"><span></span> SELECTED WORK</div>
+            <div class="work-heading flex items-end justify-between">
+                <h2 id="work-title">Recent <em>Projects</em></h2><a href="#">View All Projects <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="project-list">
+                <article class="project-card row g-0">
+                    <div class="col-lg-6 project-image featured-image"><span class="featured-pill">FEATURED</span><strong>01</strong></div>
+                    <div class="col-lg-6 project-details">
+                        <div class="project-meta"><span>2024</span><span>E-Commerce</span></div>
+                        <h3>StyleSphere Store</h3>
+                        <p>A modern e-commerce platform with seamless checkout, real-time inventory, and personalized recommendations.</p>
+                        <div class="tech-tags"><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span></div>
+                        <div class="project-links"><a href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span> View Project</a><a href="#" target="_blank" rel="noreferrer">Source Code</a></div>
+                    </div>
+                </article>
+                <article class="project-card row g-0">
+                    <div class="col-lg-6 project-details">
+                        <div class="project-meta"><span>2024</span><span>SaaS</span></div>
+                        <h3>TaskFlow App</h3>
+                        <p>A collaborative project management tool with real-time updates, Kanban boards, and team analytics.</p>
+                        <div class="tech-tags"><span>React</span><span>Socket.io</span><span>Node.js</span></div>
+                        <div class="project-links"><a href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span> View Project</a><a href="#" target="_blank" rel="noreferrer">Source Code</a></div>
+                    </div>
+                    <div class="col-lg-6 project-image"><strong>02</strong></div>
+                </article>
+                <article class="project-card row g-0">
+                    <div class="col-lg-6 project-image"><strong>03</strong></div>
+                    <div class="col-lg-6 project-details">
+                        <div class="project-meta"><span>2023</span><span>FinTech</span></div>
+                        <h3>WealthWise Dashboard</h3>
+                        <p>An intuitive financial dashboard for tracking investments, expenses, and financial goals with data visualization.</p>
+                        <div class="tech-tags"><span>TypeScript</span><span>D3.js</span><span>Firebase</span></div>
+                        <div class="project-links"><a href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span> View Project</a><a href="#" target="_blank" rel="noreferrer">Source Code</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section page-gutter" id="contact" aria-labelledby="contact-title">
+            <div class="section-label"><span></span> GET IN TOUCH</div>
+            <h2 id="contact-title">Let's work <em>together</em></h2>
+            <div class="row contact-content g-5">
+                <div class="col-lg-5 contact-information">
+                    <h3>Contact Information</h3>
+                    <div class="contact-line"><span class="contact-icon" aria-hidden="true">✉</span>
+                        <div><small>Email</small><a href="mailto:hello@johndoe.com">hello@johndoe.com</a></div>
+                    </div>
+                    <div class="contact-line"><span class="contact-icon" aria-hidden="true">⌖</span>
+                        <div><small>Location</small><span>San Francisco, CA</span></div>
+                    </div>
+                    <div class="contact-line"><span class="contact-icon" aria-hidden="true">◷</span>
+                        <div><small>Response Time</small><span>Within 24 hours</span></div>
+                    </div>
+                    <div class="social-links flex items-center gap-3"><a href="#" aria-label="GitHub">GH</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">tw</a><a href="#" aria-label="Dribbble">Db</a></div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form" id="contact-form">
+                        <label for="name">Name</label><input id="name" name="name" type="text" placeholder="John Doe" required />
+                        <label for="email">Email</label><input id="email" name="email" type="email" placeholder="john@example.com" required />
+                        <label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="Project inquiry" required />
+                        <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        <button class="button button-gradient submit-button" type="submit">Send Message <span aria-hidden="true">➤</span></button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-rule"></div>
+        <div class="container-fluid page-gutter">
+            <div class="row footer-main g-4">
+                <div class="col-lg-4 footer-intro"><a class="brand flex items-center gap-2" href="#home"><span class="brand-dot"></span><span>Portfolio</span></a>
+                    <p>Creating beautiful digital experiences that help businesses grow and connect with their audience.</p>
+                    <div class="footer-social flex items-center gap-3"><a href="#" aria-label="GitHub">GH</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">tw</a><a href="#" aria-label="Dribbble">Db</a></div>
+                </div>
+                <div class="col-6 col-lg-2 footer-column">
+                    <h3>Quick Links</h3><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#contact">Contact</a>
+                </div>
+                <div class="col-6 col-lg-2 footer-column">
+                    <h3>Services</h3><a href="#skills">Web Design</a><a href="#skills">Development</a><a href="#skills">UI/UX Design</a><a href="#skills">Consulting</a>
+                </div>
+                <div class="col-lg-4 footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to get updates on new projects and articles.</p>
+                    <form id="newsletter-form"><label class="visually-hidden" for="newsletter-email">Email address</label>
+                        <div class="newsletter-control"><input id="newsletter-email" type="email" placeholder="Your email address" required /><button aria-label="Subscribe" type="submit">→</button></div><span id="newsletter-status" role="status"></span>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom flex items-center justify-between"><span>© 2024 John Doe. All rights reserved.</span>
+                <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
